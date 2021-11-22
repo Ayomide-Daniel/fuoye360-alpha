@@ -101,7 +101,8 @@ export default {
   mounted() {
     $('.btn').click(() => {
       new Audio(require('~/assets/audio/hard-pop.wav')).play()
-      return window.navigator.vibrate(5)
+      new Audio(require('~/assets/audio/long-pop.mp3')).play()
+      return window.navigator.vibrate(10)
     })
   },
   methods: {
