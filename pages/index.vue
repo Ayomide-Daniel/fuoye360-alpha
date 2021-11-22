@@ -354,7 +354,7 @@ export default {
   mounted() {
     $('.btn').click(() => {
       new Audio(require('~/assets/audio/hard-pop.wav')).play()
-      return window.navigator.vibrate(150)
+      return window.navigator.vibrate(5)
     })
     // eslint-disable-next-line no-undef
     AOS.init()
