@@ -281,7 +281,7 @@ export default {
   // },
   mounted() {
     $('.btn').click(() => {
-      window.navigator.vibrate(200)
+      return window.navigator.vibrate(200)
     })
 
     // eslint-disable-next-line no-undef

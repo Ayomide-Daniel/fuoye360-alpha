@@ -99,8 +99,8 @@ export default {
     },
   },
   mounted() {
-    $('.btn').onclick(() => {
-      window.navigator.vibrate(200)
+    $('.btn').click(() => {
+      return window.navigator.vibrate(200)
     })
   },
   methods: {
