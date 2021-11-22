@@ -133,6 +133,7 @@ export default {
   // components: { VueSlickCarousel },
   mounted() {
     $('.btn').click(() => {
+      new Audio(require('~/assets/audio/hard-pop.wav')).play()
       return window.navigator.vibrate(150)
     })
 
