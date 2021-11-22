@@ -132,6 +132,10 @@ export default {
   name: 'AboutUs',
   // components: { VueSlickCarousel },
   mounted() {
+    $('.btn').onclick(() => {
+      window.navigator.vibrate(200)
+    })
+
     // eslint-disable-next-line no-undef
     AOS.init()
     $('[data-aos]').parent().addClass('hideOverflowOnMobile')
