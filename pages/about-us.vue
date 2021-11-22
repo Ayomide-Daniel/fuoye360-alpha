@@ -133,7 +133,7 @@ export default {
   // components: { VueSlickCarousel },
   mounted() {
     $('.btn').click(() => {
-      return window.navigator.vibrate(200)
+      return window.navigator.vibrate(150)
     })
 
     // eslint-disable-next-line no-undef
