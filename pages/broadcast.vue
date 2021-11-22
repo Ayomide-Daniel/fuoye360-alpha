@@ -285,7 +285,7 @@ export default {
     $('[data-aos]').parent().addClass('hideOverflowOnMobile')
     const options = {
       strings: [
-        '"Ji ma sun!"<br/><span class="highlight">Stay untop of matters happening in school</span>',
+        '"Jí má sùn!"<br/><span class="highlight">Stay untop of matters happening in school</span>',
       ],
       typeSpeed: 40,
     }

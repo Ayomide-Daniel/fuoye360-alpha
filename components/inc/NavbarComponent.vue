@@ -6,11 +6,11 @@
           ><img
             :src="require('~/assets/images/360logo.png')"
             alt="fuoye360-logo"
-            height="52"
+            height="50"
         /></nuxt-link>
         <button
           v-ripple
-          class="toggle-btn"
+          class="toggle-btn btn"
           type="button"
           @click="showMobileNav"
         >
@@ -101,6 +101,11 @@ export default {
     $route() {
       return this.closeMobileNav()
     },
+  },
+  mounted() {
+    $('.btn').onclick(() => {
+      window.navigator.vibrate(200)
+    })
   },
   methods: {
     ctcMobileNav(e) {
