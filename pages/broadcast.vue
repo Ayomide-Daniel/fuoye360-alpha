@@ -280,7 +280,7 @@ export default {
   //   VueSlickCarousel,
   // },
   mounted() {
-    $('.btn').onclick(() => {
+    $('.btn').click(() => {
       window.navigator.vibrate(200)
     })
 

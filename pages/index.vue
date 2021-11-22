@@ -352,7 +352,7 @@ export default {
   name: 'Index',
   components: { VueSlickCarousel },
   mounted() {
-    $('.btn').onclick(() => {
+    $('.btn').click(() => {
       window.navigator.vibrate(200)
     })
     // eslint-disable-next-line no-undef

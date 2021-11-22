@@ -132,7 +132,7 @@ export default {
   name: 'AboutUs',
   // components: { VueSlickCarousel },
   mounted() {
-    $('.btn').onclick(() => {
+    $('.btn').click(() => {
       window.navigator.vibrate(200)
     })
 

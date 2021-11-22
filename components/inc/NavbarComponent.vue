@@ -61,11 +61,7 @@
                   >
                 </div>
                 <div class="btn-div">
-                  <nuxt-link
-                    v-ripple
-                    to="/broadcast
-"
-                    class="btn default-btn"
+                  <nuxt-link v-ripple to="/broadcast" class="btn default-btn"
                     ><i class="bi bi-megaphone icon"></i> Broadcast</nuxt-link
                   >
                 </div>
