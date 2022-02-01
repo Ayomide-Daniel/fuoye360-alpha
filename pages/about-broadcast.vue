@@ -1,9 +1,6 @@
 <template>
   <div id="for-business">
-    <section
-      class="section-1"
-      :style="`background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${require('~/assets/images/sleep.jpg')})`"
-    >
+    <section class="section-1">
       <div class="container section">
         <div class="meta-div">
           <h1 class="type"></h1>
@@ -18,11 +15,11 @@
           </div>
         </div>
         <div class="img-div">
-          <!-- <img
-            :src="require('~/assets/images/service.jpg')"
-            alt=""
+          <img
+            :src="require('~/assets/images/sleep.jpg')"
+            alt="girl-sleeping-in-class"
             class="section-1-img"
-          /> -->
+          />
         </div>
       </div>
     </section>
@@ -306,12 +303,15 @@ section {
   min-height: 100vh;
 }
 .section-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../assets/images/sleep.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
   padding-top: 200px;
 }
+
 .section-1 .meta-div {
   color: var(--white);
 }
@@ -352,6 +352,12 @@ section {
     -webkit-column-count: 2;
     column-count: 2;
   }
+  .section-1 {
+    background-image: url('../assets/images/tactile_noise.png');
+    background-repeat: repeat;
+    background-size: 5%;
+  }
+
   .section-1 .container {
     display: grid;
     grid-template-columns: 50% 50%;

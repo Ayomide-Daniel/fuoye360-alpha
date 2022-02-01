@@ -1,9 +1,6 @@
 <template>
   <div>
-    <section
-      class="section-1 section"
-      :style="`background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${require('~/assets/images/reading.jpg')})`"
-    >
+    <section class="section-1 section">
       <div class="container">
         <div class="meta-div">
           <h1 class="type"></h1>
@@ -17,11 +14,11 @@
           </div>
         </div>
         <div class="img-div">
-          <!-- <img
+          <img
             :src="require('~/assets/images/reading.jpg')"
             alt=""
             class="section-1-img"
-          /> -->
+          />
         </div>
       </div>
     </section>
@@ -83,7 +80,7 @@
                     data-aos="zoom-out"
                   />
                   <div class="bg-gradient"></div>
-                  <div class="winner-title">
+                  <div class="carousel-meta">
                     <div class="meta-div" style="display: flex">
                       <h1 class="bi bi-shop icon"></h1>
                       <h1>FUOYE360 SHOP</h1>
@@ -129,7 +126,7 @@
                     data-aos="zoom-out"
                   />
                   <div class="bg-gradient"></div>
-                  <div class="winner-title">
+                  <div class="carousel-meta">
                     <div class="meta-div" style="display: flex">
                       <h1 class="bi bi-megaphone icon"></h1>
                       <h1>FUOYE360 BROADCAST</h1>
@@ -361,7 +358,7 @@ export default {
     $('[data-aos]').parent().addClass('hideOverflowOnMobile')
     const options = {
       strings: [
-        '"Entering a university is hard. <span class="highlight"><br/>Being a student should be easy!"</span>',
+        '"Entering a university is hard. <span class="highlight"><br/>Being a student should be <span class="highlight-txt">easy!</span>"</span>',
       ],
       typeSpeed: 40,
     }
@@ -379,6 +376,8 @@ export default {
   padding: 25px 0;
 }
 .section-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../assets/images/reading.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -399,7 +398,7 @@ export default {
 .section-1-img {
   display: none;
   border-radius: 1rem;
-  width: 100%;
+  width: 75%;
   right: 0;
   left: 0;
   margin: 0 auto;
@@ -573,29 +572,6 @@ export default {
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
 }
-.bg-gradient {
-  position: absolute;
-  display: block;
-  /* display: none; */
-  z-index: 1;
-  height: -webkit-fill-available;
-  width: 100%;
-  background-image: linear-gradient(
-    rgba(77, 37, 37, 0),
-    rgba(0, 0, 0, 0.5)
-  ) !important;
-  border-radius: 1rem 1rem 0 0;
-}
-.winner-title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  padding: 2rem;
-  color: var(--white);
-  z-index: 2;
-}
 .inspiration {
   position: sticky;
   padding: 3rem;
@@ -625,6 +601,12 @@ export default {
     align-items: baseline;
     justify-content: space-between;
   }
+  .section-1 {
+    background-image: url('../assets/images/tactile_noise.png');
+    background-repeat: repeat;
+    background-size: 5%;
+  }
+
   .section-1 .container {
     display: grid;
     grid-template-columns: 50% 50%;

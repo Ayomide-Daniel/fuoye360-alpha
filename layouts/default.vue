@@ -2,7 +2,19 @@
   <div>
     <v-app id="app-wrapper">
       <v-main>
-        <NavbarComponent class="nav-component" />
+        <NavbarComponent
+          v-if="
+            ![
+              'auth-login',
+              'auth-register',
+              'auth-password-reset',
+              'auth-password-email',
+              'auth-test',
+              'auth-alpha',
+            ].includes($route.name)
+          "
+          class="nav-component"
+        />
         <router-view class="router-view"></router-view>
       </v-main>
     </v-app>

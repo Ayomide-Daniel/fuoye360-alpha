@@ -1,9 +1,6 @@
 <template>
   <div>
-    <section
-      class="section-1 section"
-      :style="`background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${require('~/assets/images/plan.jpg')})`"
-    >
+    <section class="section-1 section">
       <div class="container">
         <div class="meta-div">
           <h1 class="type"></h1>
@@ -14,24 +11,28 @@
               <div class="why">
                 <h2 class="bi bi-check-all icon green-div"></h2>
                 <p>
-                  Connect the overlooked group of givers in society to the
-                  needy.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  suscipit nostrum quisquam, nisi deleniti laudantium laborum
+                  porro atque vel? Iusto, accusantium. Vero commodi quo
+                  voluptate nulla quaerat, deleniti doloremque! Ipsa!
                 </p>
               </div>
               <div class="why">
                 <h2 class="bi bi-check-all icon green-div"></h2>
                 <p>
-                  Ensure that their sophisticated and prudent givings tackle
-                  some of the prevalent social problems in their nations.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  suscipit nostrum quisquam, nisi deleniti laudantium laborum
+                  porro atque vel? Iusto, accusantium. Vero commodi quo
+                  voluptate nulla quaerat, deleniti doloremque! Ipsa!
                 </p>
               </div>
             </div>
           </div>
-          <div class="btn-div">
+          <!-- <div class="btn-div">
             <nuxt-link v-ripple to="/" class="btn fill-btn this-btn"
               >Join us to change the narrative</nuxt-link
             >
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -142,7 +143,7 @@ export default {
     $('[data-aos]').parent().addClass('hideOverflowOnMobile')
     const options = {
       strings: [
-        'At FUOYE360, we realize first-hand how difficult entering a university can be. Thus, we\'ve made it our life\'s mission to make "being a student" <span class="highlight">enjoyable, easy, and fun...</span>',
+        'At FUOYE360, we realize first-hand how difficult entering a university can be. Thus, we\'ve made it our life\'s mission to make "being a student" <span class="highlight">enjoyable, easy, and <span class="highlight-txt">fun...</span></span>',
       ],
       typeSpeed: 40,
     }
@@ -160,6 +161,8 @@ export default {
   padding: 25px 0;
 }
 .section-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('~/assets/images/plan.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -234,8 +237,7 @@ export default {
 .section-3 .highlight-container .img-div img {
   width: 100%;
   height: auto;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .section-3 .highlight-container .meta-info {

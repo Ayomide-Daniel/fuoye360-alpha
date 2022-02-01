@@ -31,13 +31,15 @@
           <div class="btn-div" style="margin-top: 0">
             <nuxt-link to="/" class="btn"
               ><i class="bi bi-shop icon"></i> Shop</nuxt-link
-            ><nuxt-link to="/broadcast" class="btn"
+            ><nuxt-link to="/about-broadcast" class="btn"
               ><i class="bi bi-megaphone icon"></i> Broadcast</nuxt-link
             >
             <nuxt-link to="/about-us" class="btn"
               ><i class="bi bi-person icon"></i> About us</nuxt-link
             >
-            <nuxt-link to="/" class="btn fill-btn">Create an account</nuxt-link>
+            <nuxt-link to="/auth/register" class="btn fill-btn"
+              >Create an account</nuxt-link
+            >
           </div>
         </div>
       </div>
@@ -61,7 +63,10 @@
                   >
                 </div>
                 <div class="btn-div">
-                  <nuxt-link v-ripple to="/broadcast" class="btn default-btn"
+                  <nuxt-link
+                    v-ripple
+                    to="/about-broadcast"
+                    class="btn default-btn"
                     ><i class="bi bi-megaphone icon"></i> Broadcast</nuxt-link
                   >
                 </div>
@@ -71,7 +76,7 @@
                   >
                 </div>
                 <div class="btn-div">
-                  <nuxt-link to="/" class="btn fill-btn"
+                  <nuxt-link to="/auth/register" class="btn fill-btn"
                     >Create an account</nuxt-link
                   >
                 </div>
@@ -189,10 +194,14 @@ aside {
 }
 .navbar-links a {
   padding: 0.5rem 1rem;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.2rem;
   text-transform: capitalize;
-  /* background: limegreen; */
+}
+.navbar-links .fill-btn {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  font-size: 1rem;
 }
 
 .navbar-links i {
@@ -223,7 +232,7 @@ aside {
 .navbar-links a:hover {
   color: var(--brand-color);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .sm-nav-container {
     display: none;
   }

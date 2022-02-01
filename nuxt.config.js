@@ -61,7 +61,7 @@ export default {
   css: ['@/assets/css/app.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['@/plugins/asset.js', '@/plugins/google-oauth.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -75,8 +75,18 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
-
+  modules: ['@nuxtjs/axios', '@nuxtjs/auth-next'],
+  // router: {
+  //   middleware: ['auth'],
+  // },
+  auth: {
+    strategies: {
+      google: {
+        clientId:
+          '22203556179-kkgklgd6rdg5trqllb49g1n2edas9rd0.apps.googleusercontent.com',
+      },
+    },
+  },
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
